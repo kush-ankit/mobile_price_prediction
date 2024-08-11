@@ -45,6 +45,9 @@ st.markdown('''
 
 
 st.write('')
+st.sidebar.markdown(' Linear Regression')
+st.sidebar.markdown('- Simple Linear Regression')
+st.sidebar.markdown('- Multple Linear Regression')
 st.subheader('What is Linear Regression?')
 st.write('Linear regression predicts the relationship between two variables by assuming they have a straight-line connection. It finds the best line that minimizes the differences between predicted and actual values. Used in fields like economics and finance, it helps analyze and forecast data trends. Linear regression can also involve several variables (multiple linear regression) or be adapted for yes/no questions (logistic regression).')
 st.markdown('#### Simple Linear Regression')
@@ -59,10 +62,13 @@ st.write('The formulation for multiple linear regression is also similar to simp
 st.write('The formula is given as:')
 st.markdown('#### **Y = B0 + B1X1 + B2X2 + … + BpXp + ε**')
 st.write('')
+st.sidebar.markdown('Random Forest')
 st.header('Random forest')
 st.subheader('What is Random forest?')
 st.write('Random forest, a popular machine learning algorithm developed by Leo Breiman and Adele Cutler, merges the outputs of numerous decision trees to produce a single outcome. Its popularity stems from its user-friendliness and versatility, making it suitable for both classification and regression tasks.')
 st.subheader('Real-Life Analogy of Random Forest')
+st.sidebar.markdown('- Bagging')
+st.sidebar.markdown('- Boosting')
 st.image('Artboard.jpg')
 st.subheader('Working of Random Forest Algorithm')
 st.image('Art.jpg')

@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import pickle
+import seaborn as sns
 
 
 st.markdown('>About Project')
@@ -35,3 +36,27 @@ st.markdown('''
             - **Battery_Power**: The battery power
             - **Price**: The price of the mobile phone
             ''')
+
+df = pd.read_csv('Mobile-Price-Prediction-cleaned_data.csv')
+st.dataframe(df)
+
+st.subheader('Price')
+st.scatter_chart(data=df['Price'])
+
+st.subheader('RAM')
+st.scatter_chart(data=df['RAM'])
+
+st.subheader('ROM')
+st.scatter_chart(data=df['ROM'])
+
+st.subheader('Mobile_Size')
+st.scatter_chart(data=df['Mobile_Size'])
+
+st.subheader('Primary_Cam')
+st.scatter_chart(data=df['Primary_Cam'])
+
+st.subheader('Selfi_Cam')
+st.scatter_chart(data=df['Selfi_Cam'])
+
+st.subheader('Battery_Power')
+st.scatter_chart(data=df['Battery_Power'])

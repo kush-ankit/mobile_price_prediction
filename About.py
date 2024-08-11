@@ -21,3 +21,16 @@ for i in lst:
 st.sidebar.markdown('Methodology')
 st.subheader('Methodology')
 st.write('We will proceed with reading the data, and then perform data analysis. The practice of examining data using analytical or statistical methods in order to identify meaningful information is known as data analysis. After data analysis, we will find out the data distribution and data types. We will train 4 classification algorithms to predict the output. We will also compare the outputs. Let us get started with the project implementation.')
+st.write('')
+st.subheader('About Dataset')
+st.markdown('''
+            The columns available in the dataset are:
+            - **Ratings**: This field contains the various rating given by customers
+            - **Ram**: This field contain the Ram capacity of the phone in GB
+            - **ROM**: This is field contains the number of space available in the phone in GB
+            - **Mobile_Size**: This is the int size of the screen
+            - **Primary_Cam**: This is the number of pixels of the Back camera
+            - **Selfi_Cam**: The number of Pixels of the front camera
+            - **Battery_Power**: The battery power
+            - **Price**: The price of the mobile phone
+            ''')

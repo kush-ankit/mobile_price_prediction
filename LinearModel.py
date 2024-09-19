@@ -25,7 +25,6 @@ with st.form("linear_form_input"):
     # Every form must have a submit button.
     submitted = st.form_submit_button("Submit")
     if submitted:
-        st.write(rating, ram, rom, size, pcam, scam, battery)
         st.write('The predicted price is:' , lm.predict(pd.DataFrame({'Ratings': [rating], 'RAM': [ram], 'ROM': [rom], 'Mobile_Size': [size], 'Primary_Cam': [pcam], 'Selfi_Cam': [scam], 'Battery_Power': [battery]}))[0])
 
     
